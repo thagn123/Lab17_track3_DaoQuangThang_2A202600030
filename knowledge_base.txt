@@ -1,0 +1,11 @@
+[Nvidia & Công nghệ AI]
+Vào năm 2024, Jensen Huang vẫn là CEO của Nvidia. Công ty đã trở thành một trong những thực thể giá trị nhất thế giới nhờ sự bùng nổ của AI và dòng chip Blackwell.
+
+[Lịch sử thế giới]
+Cách mạng Pháp (1789–1799) có nguyên nhân sâu xa từ sự bất bình đẳng trong xã hội phong kiến, khủng hoảng tài chính do nợ công và sự truyền bá tư tưởng Khai sáng. Sự kiện phá ngục Bastille là biểu tượng khởi đầu của cuộc cách mạng.
+
+[Lập trình & Công nghệ]
+Python là ngôn ngữ phổ biến nhất cho Backend nhờ sự mạnh mẽ của Django và FastAPI. React là thư viện JavaScript hàng đầu cho Frontend, nổi tiếng với kiến trúc component và virtual DOM. Dark Mode không chỉ giúp tiết kiệm pin trên màn hình OLED mà còn giảm mỏi mắt cho lập trình viên.
+
+[Du lịch & Trải nghiệm tại Việt Nam]
+Việt Nam là thiên đường cho những người yêu thích leo núi (hiking). Các cung đường nổi tiếng bao gồm Fansipan (nóc nhà Đông Dương), Tà Năng - Phan Dũng và các đỉnh núi tại Hà Giang. Đối với kỹ sư phần mềm tại Việt Nam, các cộng đồng công nghệ thường tập trung tại TP.HCM, Hà Nội và Đà Nẵng.

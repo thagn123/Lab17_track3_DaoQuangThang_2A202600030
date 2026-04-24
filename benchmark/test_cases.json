@@ -1,0 +1,14 @@
+[
+    {"category": "personal_input", "query": "My name is Bob, I am a software engineer from Vietnam and I love hiking."},
+    {"category": "personal_recall", "query": "What is my name and where do I come from?"},
+    {"category": "preference_input", "query": "I prefer using Python for backend and React for frontend. I also like Dark Mode."},
+    {"category": "preference_recall", "query": "What is my preferred tech stack and UI theme?"},
+    {"category": "factual", "query": "What are the main causes of the French Revolution?"},
+    {"category": "episodic_input", "query": "Yesterday we fixed a production bug by increasing the database connection pool size and adding a retry logic in the API layer."},
+    {"category": "episodic_recall", "query": "How did we handle the production bug yesterday?"},
+    {"category": "complex", "query": "Suggest a project idea for me based on my job and the hiking hobby I mentioned earlier."},
+    {"category": "factual_context", "query": "Who is the CEO of Nvidia in 2024?"},
+    {"category": "semantic_recall", "query": "Can you recommend some famous hiking routes in Vietnam?"},
+    {"category": "semantic_recall", "query": "What are the benefits of using Dark Mode for developers?"},
+    {"category": "semantic_recall", "query": "Tell me about Nvidia's growth and their CEO in 2024."}
+]

@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+data/
+benchmark/benchmark_report.md
+benchmark/memory_debug_report.md
+.idea/
+.vscode/
+venv/
+node_modules/
