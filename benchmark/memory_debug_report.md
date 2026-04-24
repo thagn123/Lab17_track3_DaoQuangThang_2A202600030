@@ -6,20 +6,21 @@ Giải thích chi tiết về dữ liệu đang được lưu trữ trong từng
 > **Nơi lưu:** Redis (hoặc Dictionary RAM nếu fallback). Dùng để cá nhân hóa lâu dài.
 
 ### 👤 User Facts
-- The user has a hobby of hiking.
-- User prefers React for frontend development.
-- User prefers using Python for backend development.
-- User prefers Python for backend development.
-- User is from Vietnam.
-- User's name is Bob.
-- User prefers Dark Mode for their UI theme.
 - User prefers using React for frontend development.
-- User loves hiking.
+- User is allergic to soy.
 - User is a software engineer.
+- User fixed a production bug by increasing the database connection pool size and adding retry logic in the API layer.
+- User is interested in hiking routes in Vietnam.
+- User prefers using Python for backend development.
+- User prefers Dark Mode in applications.
+- User is interested in the benefits of Dark Mode for developers.
+- User is allergic to cow's milk.
+- User is not allergic to cow's milk.
+- User is from Vietnam.
+- User loves hiking.
+- User has a hobby of hiking.
+- User's name is Bob.
 - User likes Dark Mode.
-- The user has a job related to software engineering or development.
-- The user is interested in hiking routes in Vietnam.
-- The user fixed a production bug by increasing the database connection pool size and adding retry logic in the API layer.
 
 ### ⚙️ User Preferences
 *Trống*
