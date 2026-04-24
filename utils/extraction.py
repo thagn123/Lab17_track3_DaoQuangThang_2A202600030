@@ -21,7 +21,9 @@ class MemoryExtractor:
         self.structured_llm = self.llm.with_structured_output(ExtractionResult, method="function_calling")
         
         self.prompt = ChatPromptTemplate.from_messages([
-            ("system", "Analyze the following interaction. Extract any new user facts, preferences, and provide a reflection on the agent's performance.\n"
+            ("system", "Analyze the interaction below. Extract new user facts and preferences.\n"
+                       "CRITICAL: If the user corrects or changes a previous fact (e.g., 'Actually, I am allergic to X, not Y'), "
+                       "you must extract the NEW fact to ensure the memory remains consistent and up-to-date.\n"
                        "Interaction:\n{interaction}"),
         ])
 

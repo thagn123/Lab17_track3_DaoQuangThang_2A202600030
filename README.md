@@ -29,7 +29,7 @@ flowchart TD
     G --> K[ContextBuilder]
     H --> K
     I --> K
-    J --> K
+    J --> K 
     K --> L["ChatOpenAI generate_response"]
     L --> M[MemoryExtractor]
     M --> N[write_back]
@@ -93,3 +93,11 @@ Sau khi chạy, bạn có thể xem báo cáo chi tiết tại:
 - **LLM:** OpenAI (GPT-4o, GPT-4o-mini)
 - **Vector DB:** ChromaDB (OpenAI Embeddings)
 - **NoSQL:** Redis (Long-term storage)
+
+## 🔒 Quyền riêng tư & Giới hạn (Privacy & Limitations)
+
+Dự án tuân thủ các nguyên tắc thiết kế Agent có đạo đức:
+- **Privacy:** Dữ liệu cá nhân (Long-term profile) được lưu trữ riêng biệt. Agent chỉ truy xuất khi Router xác định người dùng đang hỏi về thông tin cá nhân.
+- **Reflection:** Quá trình phản tư (Reflection) giúp Agent tự rút kinh nghiệm nhưng có giới hạn: nó không lưu trữ các thông tin nhạy cảm như mật khẩu hay mã số tài chính vào ngăn nhớ Episodic.
+- **Data Persistence:** Sử dụng Redis giúp dữ liệu bền vững, tuy nhiên người dùng có quyền xóa cache (thư mục `data/`) để khởi tạo lại bộ não của Agent.
+- **Limitations:** Hệ thống phụ thuộc vào chất lượng trích xuất của LLM. Trong trường hợp thông tin xung đột phức tạp, Agent ưu tiên dữ liệu mới nhất (Latest-input priority).

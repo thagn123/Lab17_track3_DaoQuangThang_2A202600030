@@ -10,5 +10,7 @@
     {"category": "factual_context", "query": "Who is the CEO of Nvidia in 2024?"},
     {"category": "semantic_recall", "query": "Can you recommend some famous hiking routes in Vietnam?"},
     {"category": "semantic_recall", "query": "What are the benefits of using Dark Mode for developers?"},
-    {"category": "semantic_recall", "query": "Tell me about Nvidia's growth and their CEO in 2024."}
+    {"category": "conflict_test_1", "query": "I am allergic to cow's milk."},
+    {"category": "conflict_test_2", "query": "Wait, I was wrong. I am allergic to soy, NOT cow's milk. Please update that."},
+    {"category": "conflict_recall", "query": "What am I allergic to?"}
 ]

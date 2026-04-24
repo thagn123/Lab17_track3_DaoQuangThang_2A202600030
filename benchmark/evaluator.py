@@ -68,7 +68,7 @@ class MemoryBenchmark:
 
     def _save_report(self, results):
         df = pd.DataFrame(results)
-        report_path = "benchmark/benchmark_report.md"
+        report_path = "BENCHMARK.md"
         
         with open(report_path, "w", encoding="utf-8") as f:
             f.write("# 📊 Multi-Memory Agent Benchmark Report\n\n")
