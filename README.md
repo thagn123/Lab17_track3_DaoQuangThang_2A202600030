@@ -18,19 +18,19 @@ Dự án triển khai một AI Agent tiên tiến với hệ thống đa tầng 
 ```mermaid
 flowchart TD
     A[User input] --> B[main.py]
-    B --> C[MultiMemoryAgent.chat()]
-    C --> D[LangGraph: route]
+    B --> C["MultiMemoryAgent.chat()"]
+    C --> D["LangGraph: route"]
     D --> E[MemoryRouter]
     E --> F{route target}
-    F -->|user| G[LongTermMemory: facts/prefs]
-    F -->|episodic| H[EpisodicMemory: retrieve_episodes]
-    F -->|factual| I[SemanticMemory: query_knowledge]
+    F -->|user| G["LongTermMemory: facts/prefs"]
+    F -->|episodic| H["EpisodicMemory: retrieve_episodes"]
+    F -->|factual| I["SemanticMemory: query_knowledge"]
     F -->|none| J[No memory retrieved]
     G --> K[ContextBuilder]
     H --> K
     I --> K
     J --> K
-    K --> L[ChatOpenAI generate_response]
+    K --> L["ChatOpenAI generate_response"]
     L --> M[MemoryExtractor]
     M --> N[write_back]
     N --> G
