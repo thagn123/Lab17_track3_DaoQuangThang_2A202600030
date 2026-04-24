@@ -15,6 +15,32 @@ Dự án triển khai một AI Agent tiên tiến với hệ thống đa tầng 
 
 ## 🏗️ Kiến trúc hệ thống
 
+```mermaid
+flowchart TD
+    A[User input] --> B[main.py]
+    B --> C[MultiMemoryAgent.chat()]
+    C --> D[LangGraph: route]
+    D --> E[MemoryRouter]
+    E --> F{route target}
+    F -->|user| G[LongTermMemory: facts/prefs]
+    F -->|episodic| H[EpisodicMemory: retrieve_episodes]
+    F -->|factual| I[SemanticMemory: query_knowledge]
+    F -->|none| J[No memory retrieved]
+    G --> K[ContextBuilder]
+    H --> K
+    I --> K
+    J --> K
+    K --> L[ChatOpenAI generate_response]
+    L --> M[MemoryExtractor]
+    M --> N[write_back]
+    N --> G
+    N --> H
+    N --> O[END]
+
+    P[seed_memory.py] --> Q[knowledge_base.txt]
+    Q --> I
+```
+
 ```text
 memory_Agent/
 ├── memory/          # Các module quản lý 4 loại ký ức
